@@ -62,7 +62,10 @@ struct Stack {
     }
     
     bool isEmpty(){
-        return empty;
+		if (head == NULL) {
+			return true
+		}
+		return false;
     }
     
     ~Stack(){
